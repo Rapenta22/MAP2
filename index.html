@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>김정호님의 레포트</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script> <!-- Highcharts 라이브러리 추가 -->
+  </head>
+  <body>
+    <div class="title">
+      <div style="font-size: 40px; font-weight: bold">김정호님의 레포트</div>
+      <div
+        style="
+          font-size: 32px;
+          color: white;
+          font-weight: bold;
+          margin-top: 10px;
+        "
+      >
+        10월에는 얼마나 잤을까?
+      </div>
+    </div>
+
+    <div class="report-bg">
+      <div class="report-container">
+        <div class="week-selector">
+          <button class="week-btn-1" data-week="1">1주차</button>
+          <button class="week-btn" data-week="2">2주차</button>
+          <button class="week-btn" data-week="3">3주차</button>
+          <button class="week-btn" data-week="4">4주차</button>
+          <button class="week-btn-edge" data-week="5">5주차</button>
+        </div>
+        <div class="chart-container">
+          <p class="chart-text">"선택한 주차"는 평균 N시간 잤구나!</p>
+          <div id="chart" class="chart"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
