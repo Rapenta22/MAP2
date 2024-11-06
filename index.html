@@ -6,7 +6,7 @@
     <title>김정호님의 레포트</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.highcharts.com/highcharts.js"></script> <!-- Highcharts 라이브러리 추가 -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
   </head>
   <body>
     <div class="title">
@@ -29,15 +29,18 @@
           <button class="week-btn-1" data-week="1">1주차</button>
           <button class="week-btn" data-week="2">2주차</button>
           <button class="week-btn" data-week="3">3주차</button>
-          <button class="week-btn" data-week="4">4주차</button>
-          <button class="week-btn-edge" data-week="5">5주차</button>
+          <button class="week-btn-edge" data-week="4">4주차</button>
         </div>
         <div class="chart-container">
+          <div class="overlay">
+            <p class="overlay-text">데이터를 보려면 해당 주차를 선택해주세요</p>
+          </div>
           <p class="chart-text">"선택한 주차"는 평균 N시간 잤구나!</p>
           <div id="chart" class="chart"></div>
         </div>
       </div>
     </div>
+
     <script src="js/script.js"></script>
   </body>
 </html>
