@@ -82,23 +82,17 @@ body {
   cursor: pointer;
 }
 
-.week-btn.selected, .week-btn-1.selected, .week-btn-edge.selected {
+.week-btn.selected,
+.week-btn-1.selected,
+.week-btn-edge.selected {
   background-color: #5c4ea5;
 }
 
-.week-btn:hover, .week-btn-1:hover, .week-btn-edge:hover {
-  background-color: #43358C; 
+.week-btn:hover,
+.week-btn-1:hover,
+.week-btn-edge:hover {
+  background-color: #43358c;
 }
-
-
-.chart-container {
-  margin-top: 20px;
-  padding: 20px;
-  background-color: #f3e5f5;
-  border-radius: 8px;
-  position: relative;
-}
-
 .chart-text {
   font-size: 24px;
   color: #673ab7;
@@ -110,4 +104,34 @@ body {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.chart-container {
+  position: relative;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f3e5f5;
+  border-radius: 8px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.overlay-text {
+  font-size: 24px;
+  color: #673ab7;
+  font-weight: bold;
+  text-align: center;
 }
